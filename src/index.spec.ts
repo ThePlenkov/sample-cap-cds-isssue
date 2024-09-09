@@ -2,8 +2,10 @@ import { test } from "@jest/globals";
 import cds from "@sap/cds";
 
 test("CDS typer issue", async () => {
+
+  const env = cds.env;
   //await cds.load();
-  await cds.connect.to("db");
+  await cds.connect.to('db', {model:"."});
 
   const { OBJECTS } = await import("../@cds-models/index");
 
