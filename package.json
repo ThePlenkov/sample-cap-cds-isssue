@@ -1,0 +1,29 @@
+{
+  "name": "sample-cap-cds-isssue",
+  "version": "1.0.0",
+  "description": "Sample project for CAP CDS type issue",
+  "main": "index.js",
+  "scripts": {
+    "build-types": "npx @cap-js/cds-typer . --outputDirectory @cds-models",
+    "build": "npm run build-types",
+    "test": "jest",
+    "dev": "cds watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cap-js/cds-typer": "^0.25.0",
+    "@sap/cds-dk": "^8.2.0"
+  },
+  "types": "@cds-models",
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.6.5",
+    "@cap-js/sqlite": "^1",
+    "@jest/globals": "^29.7.0",
+    "@tsconfig/recommended": "^1.0.7",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.5.4",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  }
+}
